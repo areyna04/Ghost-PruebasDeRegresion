@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/areyna04/Ghost-PruebasDeRegresion.git"
@@ -19,5 +17,8 @@
   "homepage": "https://github.com/areyna04/Ghost-PruebasDeRegresion#readme",
   "dependencies": {
     "kraken-node": "^1.0.24"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.27.1"
   }
 }
