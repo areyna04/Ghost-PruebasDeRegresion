@@ -1,9 +1,11 @@
 import { test, expect } from '@playwright/test';
+import { USERNAME, PASSWORD } from './../properties.json';
+import { faker } from '@faker-js/faker';
 
 test.beforeEach(async ({ page }) => {
     await page.goto('http://localhost:2368/ghost/');
-    await page.getByPlaceholder('jamie@example.com').fill('a.reyna@uniandes.edu.co');
-    await page.getByPlaceholder('•••••••••••••••').fill('Naranjo248.');
+    await page.getByPlaceholder('jamie@example.com').fill(USERNAME);
+    await page.getByPlaceholder('•••••••••••••••').fill(PASSWORD);
     await page.locator('id=ember10').click();
     await page.goto('http://localhost:2368/ghost/#/posts');
 });

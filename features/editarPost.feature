@@ -4,9 +4,11 @@ Feature: Editar Post
 Scenario: No debes ser capaz de dejar vacio el autor de un post
     Given I navigate to page "http://localhost:2368/ghost/"
     And I wait for 3 seconds
-    Then I enter email "<USERNAME>"
-    Then I enter password  "<PASSWORD>"
-    Then I click sign in
+    Then I enter email
+    And I wait for 3 seconds
+    Then I enter password
+    And I wait for 3 seconds
+    Then I click next
     And I wait for 5 seconds
     Given I navigate to page "http://localhost:2368/ghost/#/posts"
     And I wait for 5 seconds

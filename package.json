@@ -16,9 +16,11 @@
   },
   "homepage": "https://github.com/areyna04/Ghost-PruebasDeRegresion#readme",
   "dependencies": {
+    "chai": "^4.3.7",
     "kraken-node": "^1.0.24"
   },
   "devDependencies": {
+    "@faker-js/faker": "^7.6.0",
     "@playwright/test": "^1.27.1"
   }
 }

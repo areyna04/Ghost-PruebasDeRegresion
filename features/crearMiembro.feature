@@ -4,15 +4,17 @@ Feature: Crear Miembro
 Scenario: No debes ser capaz de crear un miembro sin email
     Given I navigate to page "http://localhost:2368/ghost/"
     And I wait for 3 seconds
-    Then I enter email "<USERNAME>"
-    Then I enter password  "<PASSWORD>"
-    Then I click sign in
+    Then I enter email
+    And I wait for 3 seconds
+    Then I enter password
+    And I wait for 3 seconds
+    Then I click next
     And I wait for 5 seconds
     Given I navigate to page "http://localhost:2368/ghost/members/new"
     And I wait for 5 seconds
     Then I enter user 'usuario'
     And I wait for 1 seconds
-    Then I click save
+    Then I click save new member
     And I wait for 5 seconds
     Then I wait for retry button to be enabled
     Then I wait
@@ -21,15 +23,17 @@ Scenario: No debes ser capaz de crear un miembro sin email
 Scenario: Debes ser capaz de crear un miembro sin nombre
     Given I navigate to page "http://localhost:2368/ghost/"
     And I wait for 3 seconds
-    Then I enter email "<USERNAME>"
-    Then I enter password  "<PASSWORD>"
-    Then I click sign in
+    Then I enter email
+    And I wait for 3 seconds
+    Then I enter password
+    And I wait for 3 seconds
+    Then I click next
     And I wait for 5 seconds
     Given I navigate to page "http://localhost:2368/ghost/members/new"
     And I wait for 5 seconds
     Then I enter user email 'usuario@user.com'
     And I wait for 1 seconds
-    Then I click save
+    Then I click save new member
     And I wait for 5 seconds
     Then I wait for saved notification
     Then I wait
@@ -38,15 +42,17 @@ Scenario: Debes ser capaz de crear un miembro sin nombre
 Scenario: No debes ser capaz de crear un miembro con email repetido
     Given I navigate to page "http://localhost:2368/ghost/"
     And I wait for 3 seconds
-    Then I enter email "<USERNAME>"
-    Then I enter password  "<PASSWORD>"
-    Then I click sign in
+    Then I enter email 
+    And I wait for 3 seconds
+    Then I enter password 
+    And I wait for 3 seconds
+    Then I click next
     And I wait for 5 seconds
     Given I navigate to page "http://localhost:2368/ghost/members/new"
     And I wait for 5 seconds
     Then I enter user email 'usuario@user.com'
     And I wait for 1 seconds
-    Then I click save
+    Then I click save new member
     And I wait for 5 seconds
     Then I wait for retry button to be enabled
     Then I wait
@@ -55,16 +61,18 @@ Scenario: No debes ser capaz de crear un miembro con email repetido
 Scenario: Debes ser capaz de crear un miembro con nombre y email
     Given I navigate to page "http://localhost:2368/ghost/"
     And I wait for 3 seconds
-    Then I enter email "<USERNAME>"
-    Then I enter password  "<PASSWORD>"
-    Then I click sign in
+    Then I enter email 
+    And I wait for 3 seconds
+    Then I enter password 
+    And I wait for 3 seconds 
+    Then I click next
     And I wait for 5 seconds
     Given I navigate to page "http://localhost:2368/ghost/members/new"
     And I wait for 5 seconds
     Then I enter user 'usuario'
     Then I enter user email 'usuario@user.com'
     And I wait for 1 seconds
-    Then I click save
+    Then I click save new member
     And I wait for 5 seconds
     Then I wait for saved notification
     Then I wait
@@ -73,9 +81,11 @@ Scenario: Debes ser capaz de crear un miembro con nombre y email
 Scenario: No debes ser capaz de dejar vacio el autor de un post
     Given I navigate to page "http://localhost:2368/ghost/"
     And I wait for 3 seconds
-    Then I enter email "<USERNAME>"
-    Then I enter password  "<PASSWORD>"
-    Then I click sign in
+    Then I enter email 
+    And I wait for 3 seconds
+    Then I enter password 
+    And I wait for 3 seconds
+    Then I click next
     And I wait for 5 seconds
     Given I navigate to page "http://localhost:2368/ghost/#/posts"
     And I wait for 5 seconds
