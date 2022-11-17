@@ -64,7 +64,7 @@ Then('I eliminate the author', async function() {
 
 Then('I wait for no author warning to appear', async function() {
     let element = await this.driver.$("span[text='At least one author is required']");
-    expect(element).to.exist.catch(error => { throw error});
+    expect(element).to.exist;
 });
 
 

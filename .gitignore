@@ -4,3 +4,5 @@ reports
 /playwright-report/
 /playwright/.cache/
 properties.json
+screenshot
+.kraken

@@ -6,7 +6,7 @@ test.beforeEach(async ({ page }) => {
     await page.goto('http://localhost:2368/ghost/');
     await page.getByPlaceholder('jamie@example.com').fill(USERNAME);
     await page.getByPlaceholder('•••••••••••••••').fill(PASSWORD);
-    await page.locator('id=ember10').click();
+    await page.locator('#ember10').click();
     await page.goto('http://localhost:2368/ghost/#/posts');
 });
 
