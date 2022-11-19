@@ -3,6 +3,5 @@ reports
 /test-results/
 /playwright-report/
 /playwright/.cache/
-properties.json
 screenshot
 .kraken

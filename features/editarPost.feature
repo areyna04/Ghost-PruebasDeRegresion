@@ -18,4 +18,3 @@ Scenario: No debes ser capaz de dejar vacio el autor de un post
     And I wait for 1 seconds
     Then I eliminate the author
     Then I wait for no author warning to appear
-    Then I wait

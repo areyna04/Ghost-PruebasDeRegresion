@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {"cucumber": "cucumber-js"},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/areyna04/Ghost-PruebasDeRegresion.git"

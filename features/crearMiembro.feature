@@ -17,7 +17,7 @@ Scenario: No debes ser capaz de crear un miembro sin email
     Then I click save new member
     And I wait for 5 seconds
     Then I wait for retry button to be enabled
-    Then I wait
+
 
 @user2 @web
 Scenario: Debes ser capaz de crear un miembro sin nombre
@@ -36,7 +36,6 @@ Scenario: Debes ser capaz de crear un miembro sin nombre
     Then I click save new member
     And I wait for 5 seconds
     Then I wait for saved notification
-    Then I wait
 
 @user3 @web
 Scenario: No debes ser capaz de crear un miembro con email repetido
@@ -55,7 +54,7 @@ Scenario: No debes ser capaz de crear un miembro con email repetido
     Then I click save new member
     And I wait for 5 seconds
     Then I wait for retry button to be enabled
-    Then I wait
+
 
 @user4 @web
 Scenario: Debes ser capaz de crear un miembro con nombre y email
@@ -75,7 +74,7 @@ Scenario: Debes ser capaz de crear un miembro con nombre y email
     Then I click save new member
     And I wait for 5 seconds
     Then I wait for saved notification
-    Then I wait
+
 
 @user6 @web
 Scenario: No debes ser capaz de dejar vacio el autor de un post
@@ -95,4 +94,3 @@ Scenario: No debes ser capaz de dejar vacio el autor de un post
     And I wait for 1 seconds
     Then I eliminate the author
     Then I wait for no author warning to appear
-    Then I wait

@@ -55,9 +55,10 @@ Then('I open editor menu', async function() {
     return await element.click();
 });
 
+
 Then('I eliminate the author', async function() {
-    let element = await this.driver.$('[aria-label="remove element"]');
-    let element2 = await this.driver.$('[aria-label="remove element"]');
+    let element = await this.driver.$("[class='ember-power-select-multiple-remove-btn']");
+    let element2 = await this.driver.$("[class='ember-power-select-multiple-remove-btn']");
     await element.click();
     return await element2.click();
 })
